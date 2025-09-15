@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--accent:#7c3aed;--muted:#94a3b8}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui;color:#e6eef8;background:linear-gradient(180deg,#071029 0%, #071827 60%)}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    nav a{margin-left:18px;color:var(--muted);font-weight:600}
+    nav a:hover{color:white}
+    .hero{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:100px 20px}
+    .hero h1{font-size:42px;margin:10px 0;line-height:1.1}
+    .hero p{color:var(--muted);max-width:60ch}
+    .btn{padding:10px 16px;border-radius:10px;font-weight:700;border:0;cursor:pointer}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#06b6d4);color:white}
+    footer{margin-top:48px;padding:28px 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Hey, I am Daneshwari</h1>
+        <p>Welcome to My professional portfolio website! Here we can explore more about me.</p>
+        <div style="margin-top:20px">
+          <a class="btn btn-primary" href="resume.html">View Resume</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year"><br></span>Daneshwari</div>
+      <div>connect with me on <br> <a href="https://github.com/dashboard">GitHub</a><a href="https://www.linkedin.com/in/daneshwarihiremath/"><br>Linkedin</a></div>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
